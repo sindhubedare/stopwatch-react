@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+
 
 class Clock extends React.Component{
     constructor(props)
@@ -8,6 +8,8 @@ class Clock extends React.Component{
       this.state=
       {startTime:0}
     }
+
+  //starting a prop with start time = 0  
      startTime()
         {
          this.intervalId=(
@@ -15,7 +17,11 @@ class Clock extends React.Component{
             startTime: this.state.startTime+1,
             })},1000));
         }     
-         
+    //using reference: https://medium.com/@staceyzander/setinterval-and-clearinterval-in-react-b1d0ee1e1a6a    
+    //intervalID , setInterval and clearInterval are part of react so using them here 
+    //incrementing it using +1
+
+
      pauseTime()
         {
          
@@ -29,6 +35,7 @@ class Clock extends React.Component{
           clearInterval(this.intervalId)
                           
         }  
+        
         
     render()
     {
