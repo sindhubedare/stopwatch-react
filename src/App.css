@@ -41,7 +41,7 @@ h1 {
 #pause{
 height: 45px;
 width: 150px;
-color: rgb(138, 87, 87);
+
 background-color: aqua;
 margin: 20px;
 font-size: 25px;
@@ -52,7 +52,7 @@ border-radius:5%;
 #reset{
   height: 45px;
   width: 150px;
-  color: rgb(138, 87, 87);
+  
   background-color: aqua;
   margin: 20px;
   font-size: 25px;

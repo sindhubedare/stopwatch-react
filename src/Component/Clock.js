@@ -35,15 +35,17 @@ class Clock extends React.Component{
           clearInterval(this.intervalId)
                           
         }  
-        
-        
+     //resetting the clock with this function to 0   
+
     render()
     {
       return (
   
       <div> 
       
-        <div className="startpoint"> 0 : {this.state.startTime}</div>
+        <div className="startpoint"> 0 : {this.state.startTime}</div> 
+  
+
         <div className='buttons'>
           <button id="start" onClick={()=>this.startTime()}>START</button>
           <button id="pause" onClick={()=>this.pauseTime()}>PAUSE</button>
@@ -54,7 +56,8 @@ class Clock extends React.Component{
       </div>
     );
   }}
-
+//starting clock displaying the start time, it can be paused time or reset time as well
+//linking the buttons with respective functions
 
 export default Clock;
 
